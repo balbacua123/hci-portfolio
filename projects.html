@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="css/projects.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo">BALBACUA</h1>
+        <nav>
+          <a href="index.html">HOME</a>
+          <a href="skills.html">SKILLS</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="contact.html">CONTACT ME</a>
+        </nav>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+
+      <section class="projects-section">
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-grid">
+          <a
+            href="https://github.com/balbacua123/JumpingIlonggo"
+            class="project-card card1"
+            target="_blank"
+          >
+            <h3>Jumping Ilonggo</h3>
+            <p>
+              A 2D platform game featuring two levels with unique challenges and
+              obstacles.
+            </p>
+            <span class="tech">Tech: Godot</span>
+          </a>
+
+          <a href="#" class="project-card card2">
+            <h3>Hand Gesture Locker</h3>
+            <p>
+              A desktop locker that unlocks using custom hand gestures for
+              enhanced security.
+            </p>
+            <span class="tech">Tech: Firebase, Python, CustomTkinter</span>
+          </a>
+
+          <a href="#" class="project-card card3">
+            <h3>Moviefy</h3>
+            <p>
+              A system to track favorite movies and watchlists for each user
+              efficiently.
+            </p>
+            <span class="tech">Tech: Python, MySQL</span>
+          </a>
+
+          <a
+            href="https://github.com/balbacua123/prominent-gaming"
+            class="project-card card4"
+            target="_blank"
+          >
+            <h3>Prominent Gaming</h3>
+            <p>A static website showcasing pilot services for various games.</p>
+            <span class="tech">Tech: HTML, CSS, JavaScript</span>
+          </a>
+
+          <a href="#" class="project-card card5">
+            <h3>FreeCodeCamp Python</h3>
+            <p>
+              Coding challenges and projects completed on freecodecamp.com to
+              improve Python skills.
+            </p>
+            <span class="tech">Tech: Python</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector("nav");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>

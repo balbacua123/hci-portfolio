@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo">BALBACUA</h1>
+
+        <nav>
+          <a href="#home">HOME</a>
+          <a href="skills.html">SKILLS</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="contact.html">CONTACT ME</a>
+        </nav>
+
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </header>
+
+      <spline-viewer
+        class="background-spline"
+        url="https://prod.spline.design/Xg9VzTMrf4el1pHA/scene.splinecode"
+      ></spline-viewer>
+
+      <section class="home-sctn" id="home">
+        <div class="home-content">
+          <h1>Hi, It's <span>BALBACUA</span></h1>
+          <h3>
+            A college student with an interest in working with APIs and
+            databases, actively developing skills in designing, integrating, and
+            managing data flows
+          </h3>
+
+          <div class="home-btn-div">
+            <a href="https://www.facebook.com/cjmoves7" target="_blank"
+              ><img src="images/socialmedia/facebook.png" alt=""
+            /></a>
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1"
+              target="_blank"
+              ><img src="images/socialmedia/youtube.png" alt=""
+            /></a>
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1"
+              target="_blank"
+              ><img src="images/socialmedia/github.png" alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="home-img">
+          <img src="images/jon_lennon.jpg" alt="john.lennon" />
+        </div>
+      </section>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.13/build/spline-viewer.js"
+    ></script>
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector("nav");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>

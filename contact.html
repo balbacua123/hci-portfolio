@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo">BALBACUA</h1>
+        <nav>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links" id="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT ME</a>
+          </div>
+        </nav>
+      </header>
+
+      <spline-viewer
+        class="background-spline"
+        url="https://prod.spline.design/Gbe4Yibq0DX-N4Zr/scene.splinecode"
+      >
+      </spline-viewer>
+
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@1.12.13/build/spline-viewer.js"
+    ></script>
+    <script>
+      const burger = document.getElementById("burger");
+      const navLinks = document.getElementById("nav-links");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("nav-active");
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
